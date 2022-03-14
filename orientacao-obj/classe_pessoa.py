@@ -15,6 +15,7 @@ class Pessoa:
     # "__init__" função construtora da classe, "__" define um método especial
     # o parâmetro self é uma convenção e refere-se ao próprio objeto. 
     
+    
     @property
     def nome(self): 
         print("executando @property nome")
@@ -23,7 +24,10 @@ class Pessoa:
         # getter -> método get, retorna um atributo de um objeto. 
         # método title trata o nome e devolve em letra maíuscula. 
         
+    @nome.setter 
+    # notação da propriedade em setters -> atributo.metodo
     def nome(self , nome):
+        print("exec. setter")
         self.__nome = nome 
-        
+
         
