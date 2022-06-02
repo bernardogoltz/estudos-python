@@ -14,6 +14,7 @@ plt.style.use('_mpl-gallery')
 
 x = np.linspace(0,np.pi*2,50)
 y = np.sin(x)
+y2 = np.cos(x)
 
 # subplots()
 
@@ -24,4 +25,6 @@ ax.set_title("Seno de x")
 ax.set_xlabel("Valores para o eixo X")
 ax.set_ylabel("Valores para o eixo Y")
 
-ax.plot(x,y,linewidth = 2.5)
+ax.plot(x,y,linewidth = 2.5,label = 'Seno')
+ax.plot(x,y2,linewidth = 2.5,label = 'Cosseno')
+ax.legend(loc = 'upper right')
